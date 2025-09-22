@@ -9,7 +9,7 @@
   entry: say-hello
   require_serial: true
   pass_filenames: false
-  args: ['OpenMMLab']
+  args: ['VBTI']
 
 - id: check-algo-readme
   name: check algorithm readme
