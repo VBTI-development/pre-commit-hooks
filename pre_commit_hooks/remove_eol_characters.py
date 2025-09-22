@@ -11,11 +11,11 @@ def remove_eol() -> Tuple[str, str]:
     characters = r'\u4e00-\u9fff'
     # Unicode halfwidth and fullwidth forms, refer to
     # https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)
-    punctuations = r'\uff01-\uff9f'
+    punctuation = r'\uff01-\uff9f'
     # Find natural Chinese paragraphs that are split by end_of_line characters.
-    # The pattern is: Chinese characters/punctuations with one and only one
+    # The pattern is: Chinese characters/punctuation with one and only one
     # end_of_line in between.
-    pattern = fr'([{characters}{punctuations}]){eol_character}([{characters}])'
+    pattern = fr'([{characters}{punctuation}]){eol_character}([{characters}])'
     # This replacement will remove the end_of_line character in between
     repl = r'\1\2'
     return pattern, repl
