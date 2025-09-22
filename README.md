@@ -1,14 +1,14 @@
 # pre-commit-hooks
 
-Some pre-commit hooks for OpenMMLab projects.
+Some pre-commit hooks for VBTI-Development projects.
 
 ## Using pre-commit-hooks with pre-commit
 
 Add this to your `.pre-commit-config.yaml`
 
 ```yaml
--   repo: https://github.com/open-mmlab/pre-commit-hooks
-    rev: v0.4.1  # Use the ref you want to point at
+-   repo: https://github.com/vbti-development/pre-commit-hooks
+    rev: v0.4.2  # Use the ref you want to point at
     hooks:
     -   id: check-algo-readme
     -   id: check-copyright
@@ -50,8 +50,8 @@ Check the validity of the ecosystem yaml file
 - `filename` - path of the project yaml
 
 ```yaml
-  - repo: https://github.com/open-mmlab/pre-commit-hooks
-    rev: v0.4.1
+  - repo: https://github.com/vbti-development/pre-commit-hooks
+    rev: v0.4.2
     hooks:
     -   id: check-ecosystem-validity
         args: [projects_index.yaml]
@@ -77,7 +77,7 @@ Usage:
 
 ```yaml
   - repo: https://github.com/open-mmlab/pre-commit-hooks
-    rev: v0.4.1
+    rev: v0.4.2
     hooks:
     -   id: remove-improper-eol-in-cn-docs
 ```
